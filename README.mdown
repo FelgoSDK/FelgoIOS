@@ -1,0 +1,42 @@
+# Integrate V-Play with Existing Apps
+
+This guide describes how to integrate V-Play into existing iOS Xcode projects.
+
+*V-Play Native Integration* comes as a public Cocoapods Podspec.
+
+1. Add *V-Play Native Integration* pod as dependency of your existing Xcode project and run `pod install`:
+
+    ```ruby
+	pod 'VPlayIOS', :git => 'https://github.com/V-Play/VPlayIOS.git'
+    ```
+
+2. Initialize *VPlayIOS* in AppDelegate:
+
+    ```objc
+	#import "VPlayIOS.h"
+
+    - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+      // Start the V-Play/Qt runtime at app start in background
+      [[VPlayIOS sharedInstance] start];
+      
+      return YES;
+    }
+    
+    - (void)applicationWillTerminate:(UIApplication *)application {
+      // Shutdown the V-PlayQt runtime again
+      [[VPlayIOS sharedInstance] quit];
+    }
+    ```
+
+3. Add `VPlayIOSView` class (a `UIView` subclass) anywhere from within your *View Controller* code or Interface Builder. 
+
+4. Set the `VPlayIOSView`'s '*qmlSource* property to a URL referencing your QML file:
+
+    ```objc
+	#import "VPlayIOSView.h"
+
+    - (void)loadQML {
+    	self.vplayView.qmlSource = [[NSBundle mainBundle] URLForResource:@"Main" withExtension:@"qml"];
+	}
+    ```
