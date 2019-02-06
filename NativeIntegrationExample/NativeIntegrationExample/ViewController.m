@@ -26,7 +26,7 @@
   //[self addQMLView];
   
   // Load QML file from project resources:
-  self.vplayView.qmlSource = [[NSBundle mainBundle] URLForResource:@"Main" withExtension:@"qml"];
+  self.vplayView.qmlSource = [[NSBundle mainBundle] URLForResource:@"Cube3D" withExtension:@"qml"];
   
   // Load QML content directly from NSData:
   //self.vplayView.qmlContent = [@"import VPlayApps 1.0; App { AppText { text: 'Direct QML content' } }"

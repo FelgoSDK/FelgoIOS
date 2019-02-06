@@ -14,7 +14,7 @@
 		ABC1D28421534B0F00415127 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC1D28321534B0F00415127 /* Assets.xcassets */; };
 		ABC1D28721534B0F00415127 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC1D28521534B0F00415127 /* LaunchScreen.storyboard */; };
 		ABC1D28A21534B0F00415127 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC1D28921534B0F00415127 /* main.m */; };
-		ABC1D29121534CA100415127 /* Main.qml in Resources */ = {isa = PBXBuildFile; fileRef = ABC1D29021534CA100415127 /* Main.qml */; };
+		ABEBA6E4220A5C21006370F1 /* Cube3D.qml in Resources */ = {isa = PBXBuildFile; fileRef = ABEBA6E3220A5C21006370F1 /* Cube3D.qml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		ABC1D28621534B0F00415127 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABC1D28821534B0F00415127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABC1D28921534B0F00415127 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		ABC1D29021534CA100415127 /* Main.qml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Main.qml; sourceTree = "<group>"; };
+		ABEBA6E3220A5C21006370F1 /* Cube3D.qml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cube3D.qml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 				ABC1D28321534B0F00415127 /* Assets.xcassets */,
 				ABC1D28521534B0F00415127 /* LaunchScreen.storyboard */,
 				ABC1D28821534B0F00415127 /* Info.plist */,
-				ABC1D29021534CA100415127 /* Main.qml */,
+				ABEBA6E3220A5C21006370F1 /* Cube3D.qml */,
 				ABC1D28921534B0F00415127 /* main.m */,
 			);
 			path = NativeIntegrationExample;
@@ -157,7 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABC1D28721534B0F00415127 /* LaunchScreen.storyboard in Resources */,
-				ABC1D29121534CA100415127 /* Main.qml in Resources */,
+				ABEBA6E4220A5C21006370F1 /* Cube3D.qml in Resources */,
 				ABC1D28421534B0F00415127 /* Assets.xcassets in Resources */,
 				ABC1D28221534B0D00415127 /* Main.storyboard in Resources */,
 			);
