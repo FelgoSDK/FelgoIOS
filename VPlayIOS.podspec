@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "VPlayIOS"
-  s.version      = "2.18.1"
+  s.version      = "2.18.3"
   s.summary      = "V-Play in native iOS projects"
 
   s.description  = <<-DESC
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "10.0"
 
-  s.source       = { :git => 'https://github.com/V-Play/VPlayIOS.git', :tag => '2.18.1' }
+  s.source       = { :git => 'https://github.com/V-Play/VPlayIOS.git', :tag => '2.18.3' }
 
   s.preserve_paths = "headers/*.h", "libs/*.a"
 
@@ -30,9 +30,13 @@ Pod::Spec.new do |s|
   s.frameworks = "AddressBook",
     "Foundation",
     "QuartzCore",
+    "GameController",
     "AudioToolbox",
+    "CoreBluetooth",
     "CoreFoundation",
     "CoreGraphics",
+    "CoreLocation",
+    "CoreMotion",
     "CoreText",
     "CoreAudio",
     "CoreMedia",
