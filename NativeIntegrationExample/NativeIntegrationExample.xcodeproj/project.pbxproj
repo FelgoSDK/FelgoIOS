@@ -8,19 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		493C8EC2F0610FD23B3326F5 /* libPods-NativeIntegrationExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D4564F3DA3FB9227E6059A /* libPods-NativeIntegrationExample.a */; };
+		AB2A921D2271F0CC004398DB /* qml in Resources */ = {isa = PBXBuildFile; fileRef = AB2A921C2271F0CC004398DB /* qml */; };
 		ABC1D27C21534B0D00415127 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC1D27B21534B0D00415127 /* AppDelegate.m */; };
 		ABC1D27F21534B0D00415127 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC1D27E21534B0D00415127 /* ViewController.m */; };
 		ABC1D28221534B0D00415127 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC1D28021534B0D00415127 /* Main.storyboard */; };
 		ABC1D28421534B0F00415127 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC1D28321534B0F00415127 /* Assets.xcassets */; };
 		ABC1D28721534B0F00415127 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC1D28521534B0F00415127 /* LaunchScreen.storyboard */; };
 		ABC1D28A21534B0F00415127 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC1D28921534B0F00415127 /* main.m */; };
-		ABEBA6E4220A5C21006370F1 /* Cube3D.qml in Resources */ = {isa = PBXBuildFile; fileRef = ABEBA6E3220A5C21006370F1 /* Cube3D.qml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C8AAFC9E4AD0591188DE709 /* Pods-NativeIntegrationExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeIntegrationExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-NativeIntegrationExample/Pods-NativeIntegrationExample.release.xcconfig"; sourceTree = "<group>"; };
 		84D4564F3DA3FB9227E6059A /* libPods-NativeIntegrationExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NativeIntegrationExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9868650148A9C5F239C3F770 /* Pods-NativeIntegrationExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeIntegrationExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NativeIntegrationExample/Pods-NativeIntegrationExample.debug.xcconfig"; sourceTree = "<group>"; };
+		AB2A921C2271F0CC004398DB /* qml */ = {isa = PBXFileReference; lastKnownFileType = folder; path = qml; sourceTree = "<group>"; };
 		ABC1D27721534B0D00415127 /* NativeIntegrationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NativeIntegrationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC1D27A21534B0D00415127 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ABC1D27B21534B0D00415127 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -31,7 +32,6 @@
 		ABC1D28621534B0F00415127 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABC1D28821534B0F00415127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABC1D28921534B0F00415127 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		ABEBA6E3220A5C21006370F1 /* Cube3D.qml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cube3D.qml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +92,8 @@
 				ABC1D28321534B0F00415127 /* Assets.xcassets */,
 				ABC1D28521534B0F00415127 /* LaunchScreen.storyboard */,
 				ABC1D28821534B0F00415127 /* Info.plist */,
-				ABEBA6E3220A5C21006370F1 /* Cube3D.qml */,
 				ABC1D28921534B0F00415127 /* main.m */,
+				AB2A921C2271F0CC004398DB /* qml */,
 			);
 			path = NativeIntegrationExample;
 			sourceTree = "<group>";
@@ -157,7 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABC1D28721534B0F00415127 /* LaunchScreen.storyboard in Resources */,
-				ABEBA6E4220A5C21006370F1 /* Cube3D.qml in Resources */,
+				AB2A921D2271F0CC004398DB /* qml in Resources */,
 				ABC1D28421534B0F00415127 /* Assets.xcassets in Resources */,
 				ABC1D28221534B0D00415127 /* Main.storyboard in Resources */,
 			);
@@ -337,14 +337,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9WRU43FH9W;
+				DEVELOPMENT_TEAM = VB6Z5JQJTD;
 				INFOPLIST_FILE = NativeIntegrationExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.vplay.NativeIntegrationExample;
+				PRODUCT_BUNDLE_IDENTIFIER = net.vplay.nativeintegrationexample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -356,14 +356,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9WRU43FH9W;
+				DEVELOPMENT_TEAM = VB6Z5JQJTD;
 				INFOPLIST_FILE = NativeIntegrationExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.vplay.NativeIntegrationExample;
+				PRODUCT_BUNDLE_IDENTIFIER = net.vplay.nativeintegrationexample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
