@@ -19,8 +19,8 @@
      id: sensor
      active: true
      // We copy reading to custom property to use behavior on it
-     property real readingX: reading ? reading.x : 0
-     property real readingY: reading ? reading.y : 0
+     property real readingX: reading && reading.x || 0
+     property real readingY: reading && reading.y || 0
      // We animate property changes for smoother movement of the cube
      Behavior on readingX {NumberAnimation{duration: 200}}
      Behavior on readingY {NumberAnimation{duration: 200}}
