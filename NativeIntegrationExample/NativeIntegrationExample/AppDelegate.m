@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "VPlayIOS.h"
+#import "FelgoIOS.h"
 
 @interface AppDelegate ()
 
@@ -19,13 +19,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   
-  [[VPlayIOS sharedInstance] start];
+  [[FelgoIOS sharedInstance] start];
   
   return YES;
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
-  [[VPlayIOS sharedInstance] quit];
+  [[FelgoIOS sharedInstance] quit];
 }
 
 

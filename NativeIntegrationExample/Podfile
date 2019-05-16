@@ -6,6 +6,6 @@ target 'NativeIntegrationExample' do
   # use_frameworks!
 
   # Pods for NativeIntegrationExample
-  pod 'FelgoIOS', :git => 'https://github.com/V-Play/VPlayIOS.git'
+  pod 'FelgoIOS', :git => 'https://github.com/FelgoSDK/FelgoIOS.git'
 
 end

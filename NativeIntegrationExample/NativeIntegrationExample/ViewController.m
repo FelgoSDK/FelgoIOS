@@ -8,11 +8,11 @@
 
 #import "ViewController.h"
 
-#import "VPlayIOSView.h"
+#import "FelgoIOSView.h"
 
 @interface ViewController ()
 
-@property (strong, nonatomic) IBOutlet VPlayIOSView *vplayView;
+@property (strong, nonatomic) IBOutlet FelgoIOSView *felgoView;
 
 @end
 
@@ -26,17 +26,17 @@
   //[self addQMLView];
   
   // Load QML file from project resources:
-  self.vplayView.qmlSource = [[NSBundle mainBundle] URLForResource:@"Cube3D" withExtension:@"qml" subdirectory:@"qml"];
+  self.felgoView.qmlSource = [[NSBundle mainBundle] URLForResource:@"Cube3D" withExtension:@"qml" subdirectory:@"qml"];
   
   // Load QML content directly from NSData:
-  //self.vplayView.qmlContent = [@"import VPlayApps 1.0; App { AppText { text: 'Direct QML content' } }"
+  //self.felgoView.qmlContent = [@"import VPlayApps 1.0; App { AppText { text: 'Direct QML content' } }"
   //                             dataUsingEncoding:NSUTF8StringEncoding];
 }
 
 - (void)addQMLView {
-  self.vplayView = [VPlayIOSView new];
-  self.vplayView.frame = self.view.bounds;
-  [self.view addSubview:self.vplayView];
+  self.felgoView = [FelgoIOSView new];
+  self.felgoView.frame = self.view.bounds;
+  [self.view addSubview:self.felgoView];
 }
 
 
