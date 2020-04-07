@@ -1,6 +1,5 @@
 //
-//  EmbeddedVPlay.h
-//  EmbeddedVPlayTest
+//  FelgoIOS.h
 //
 //  Created by Christian Bartsch on 02.08.18.
 //

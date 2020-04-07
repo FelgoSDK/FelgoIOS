@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   
-  // VPlayView is added in Main.storyboard
+  // FelgoIOSView is added in Main.storyboard
   // could also be added in code:
   //[self addQMLView];
   
@@ -29,7 +29,7 @@
   self.felgoView.qmlSource = [[NSBundle mainBundle] URLForResource:@"Cube3D" withExtension:@"qml" subdirectory:@"qml"];
   
   // Load QML content directly from NSData:
-  //self.felgoView.qmlContent = [@"import VPlayApps 1.0; App { AppText { text: 'Direct QML content' } }"
+  //self.felgoView.qmlContent = [@"import Felgo 3.0; App { AppText { text: 'Direct QML content' } }"
   //                             dataUsingEncoding:NSUTF8StringEncoding];
 }
 
