@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "FelgoIOS"
-  s.version      = "3.2.0"
+  s.version      = "3.5.0"
   s.summary      = "Felgo in native iOS projects"
 
   s.description  = <<-DESC
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "10.0"
 
-  s.source       = { :git => 'https://github.com/FelgoSDK/FelgoIOS.git', :tag => '3.2.0' }
+  s.source       = { :git => 'https://github.com/FelgoSDK/FelgoIOS.git', :tag => '3.5.0' }
 
   s.preserve_paths = "headers/*.h", "libs/*.a"
 

@@ -9,8 +9,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef void (^initBlock)();
-typedef void (^signalHandler)(NSArray *params);
+typedef void (^QMLInitBlock)();
+typedef void (^QMLSignalHandler)(NSArray *params);
 
 @interface FelgoIOSView : UIView
 
@@ -19,8 +19,8 @@ typedef void (^signalHandler)(NSArray *params);
 @property (nonatomic, retain) NSData *qmlContent;
 
 // optional code block to be called when the QML file is instantiated
-// called before QML Component.onComplete is emitted
-@property (nonatomic) initBlock qmlInitBlock;
+// called after QML Component.onComplete is emitted
+@property (nonatomic, strong) QMLInitBlock qmlInitBlock;
 
 - (void)setQmlProperty:(NSString *)propertyName value:(id)value;
 
@@ -28,7 +28,7 @@ typedef void (^signalHandler)(NSArray *params);
 
 - (void)callQmlMethod:(NSString *)methodName value:(NSArray *)params;
 
-- (void)addSignalHandler:(NSString *)signalName handler:(signalHandler)handler;
+- (void)addSignalHandler:(NSString *)signalName handler:(QMLSignalHandler)handler;
 
 @end
 
